@@ -1,6 +1,9 @@
-[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://dr1i7q7h6phxb"]
+[gd_resource type="TileSet" load_steps=4 format=3 uid="uid://dr1i7q7h6phxb"]
 
 [ext_resource type="Texture2D" uid="uid://c35h16tbu63ys" path="res://addons/Platformer Pack Industrial/platformerPack_industrial_tilesheet.png" id="1_2y8wr"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ax02p"]
+friction = 0.2
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cusvy"]
 texture = ExtResource("1_2y8wr")
@@ -381,4 +384,5 @@ texture_region_size = Vector2i(70, 70)
 [resource]
 tile_size = Vector2i(70, 70)
 physics_layer_0/collision_layer = 1
+physics_layer_0/physics_material = SubResource("PhysicsMaterial_ax02p")
 sources/0 = SubResource("TileSetAtlasSource_cusvy")
